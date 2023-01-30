@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - cicd-est
+      - cicd-test
     paths:
       - 'airflow-base/**'
 
