@@ -1,2 +1,2 @@
 openpyxl==3.0.7
-#setuptools==57.4.0
+setuptools==57.4.0
