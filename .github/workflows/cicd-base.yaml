@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - cicd-test
+      - main
     paths:
       - 'airflow-base/**'
 
@@ -13,4 +13,4 @@ jobs:
    
   call:
     needs: build
-    uses: nombase/test-repo/.github/workflows/cicd.yaml@cicd-test
+    uses: nombase/test-repo/.github/workflows/cicd.yaml@main

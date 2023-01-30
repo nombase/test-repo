@@ -2,7 +2,7 @@ on:
   workflow_call:
   push:
     branches:
-      - cicd-test
+      - main
     paths:
       - 'airflow/**'
       - '!airflow-base/**'
