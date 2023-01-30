@@ -1,0 +1,13 @@
+on:
+  workflow_call:
+  push:
+    branches:
+      - cicd-test
+    paths:
+      - 'airflow/**'
+      - '!airflow-base/**' 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
