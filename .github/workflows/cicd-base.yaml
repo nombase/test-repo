@@ -1,16 +1,16 @@
 on:
-  push:
-    branches:
-      - cicd-est
-    paths:
-      - 'airflow-base/**'
+  push:
+    branches:
+      - cicd-est
+    paths:
+      - 'airflow-base/**'
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      
-  call:
-    needs: build
-    uses: nombase/test-repo/.github/workflows/cicd.yaml@cicd-test
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+   
+  call:
+    needs: build
+    uses: nombase/test-repo/.github/workflows/cicd.yaml@cicd-test
